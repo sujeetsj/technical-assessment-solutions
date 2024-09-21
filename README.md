@@ -1,26 +1,52 @@
 # Technical Assessment Solutions
 
-This repository contains solutions to a technical assessment for a Software Engineer position. The assessment covers various aspects of Python programming, including web scraping, data cleaning, Django, concurrency, and algorithms.
+This repository contains my solutions to the Software Engineer Technical Assessment. The assessment covers various aspects of Python programming, including web scraping, data cleaning, Django, concurrency, and algorithms.
 
-## Solutions
+## Project Structure
 
-1. **Web Scraper** (q1_web_scraper.py): A script that scrapes article titles and URLs from a news website using BeautifulSoup and requests.
+```
+technical-assessment-solutions/
+├── q1_web_scraper.py
+├── q2_csv_cleaner.py
+├── q3_django_top_customers/
+│   ├── manage.py
+│   ├── top_customers_project/
+│   └── top_customers_app/
+├── q4_rate_limiter.py
+├── q5_data_aggregator.py
+├── q6_find_duplicate.py
+├── input_data.csv
+├── README.md
+└── requirements.txt
+```
 
-2. **CSV Cleaner** (q2_csv_cleaner.py): A script that cleans CSV data by removing duplicates and filtering out invalid entries.
+## Solutions Overview
 
-3. **Django Top Customers** (q3_django_top_customers/): A Django application that implements a method to get the top 5 customers who have spent the most in the last 6 months.
+1. **Web Scraper** (q1_web_scraper.py): 
+   - Scrapes article titles, URLs, and dates from Indian Express.
+   - Uses BeautifulSoup and requests libraries.
 
-4. **Rate Limiter** (q4_rate_limiter.py): A thread-safe implementation of a rate limiter that limits the number of requests a user can make within a given time window.
+2. **CSV Cleaner** (q2_csv_cleaner.py):
+   - Cleans CSV data by removing duplicates and filtering out invalid entries.
+   - Handles email validation and timestamp-based selection.
 
-5. **Data Aggregator** (q5_data_aggregator.py): A custom function that aggregates data from a list of dictionaries based on a specified key and aggregator function.
+3. **Django Top Customers** (q3_django_top_customers/):
+   - Django application that implements a method to get the top 5 customers who have spent the most in the last 6 months.
 
-6. **Find Duplicate** (q6_find_duplicate.py): An algorithm to find a duplicate number in an array with O(1) extra space complexity.
+4. **Rate Limiter** (q4_rate_limiter.py):
+   - Implements a thread-safe rate limiter that limits the number of requests a user can make within a given time window.
 
-## Setup and Usage
+5. **Data Aggregator** (q5_data_aggregator.py):
+   - Custom function that aggregates data from a list of dictionaries based on a specified key and aggregator function.
+
+6. **Find Duplicate** (q6_find_duplicate.py):
+   - Algorithm to find a duplicate number in an array with O(1) extra space complexity.
+
+## Setup and Installation
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/technical-assessment-solutions.git
+   git clone https://github.com/sujeetsj/technical-assessment-solutions.git
    cd technical-assessment-solutions
    ```
 
@@ -35,13 +61,49 @@ This repository contains solutions to a technical assessment for a Software Engi
    pip install -r requirements.txt
    ```
 
-4. Run individual scripts as needed, for example:
+## Running the Solutions
+
+1. Web Scraper:
    ```
    python q1_web_scraper.py
    ```
 
-5. For the Django application (q3), additional setup may be required. Refer to the Django documentation for more information.
+2. CSV Cleaner:
+   ```
+   python q2_csv_cleaner.py
+   ```
 
-## Note
+3. Django Top Customers:
+   ```
+   cd q3_django_top_customers
+   python manage.py migrate
+   python manage.py runserver
+   ```
+   Then visit `http://127.0.0.1:8000/` in your web browser.
 
-This code is part of a technical assessment and is provided for demonstration purposes. Some scripts may require additional configuration or dependencies to run properly in your environment.
+4. Rate Limiter:
+   ```
+   python q4_rate_limiter.py
+   ```
+
+5. Data Aggregator:
+   ```
+   python q5_data_aggregator.py
+   ```
+
+6. Find Duplicate:
+   ```
+   python q6_find_duplicate.py
+   ```
+
+## Notes
+
+- Make sure you have Python 3.7+ installed on your system.
+- The Django project (Q3) may require additional setup. Please refer to the Django documentation for more information.
+- The `input_data.csv` file is provided for testing the CSV cleaner (Q2).
+
+## Contact
+
+If you have any questions or need further clarification, please feel free to contact me at sujeetyadav02222@gmail.com.
+
+Thank you for reviewing my technical assessment solutions!
