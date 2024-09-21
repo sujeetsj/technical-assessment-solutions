@@ -20,7 +20,7 @@ This repository contains solutions to a technical assessment for a Software Engi
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/technical-assessment-solutions.git
+   https://github.com/sujeetsj/technical-assessment-solutions
    cd technical-assessment-solutions
    ```
 
